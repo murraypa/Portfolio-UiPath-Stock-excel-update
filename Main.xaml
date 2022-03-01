@@ -1,0 +1,323 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="663.2,3041.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="668.8,2976.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Quote for T | FreeRealTime.com" sap:VirtualizedContainerService.HintSize="627.2,2884" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="8c3ca6b8-be6b-4969-ad09-e24eebe51ad5" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="593.6,2667.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="552,2573.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="StockQuotes.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="False" sap:VirtualizedContainerService.HintSize="518.4,2304" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" SaveAfterEachRow="False">
+                    <ueab:ExcelForEachRowX.Body>
+                      <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                        <ActivityAction.Argument1>
+                          <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                        </ActivityAction.Argument1>
+                        <ActivityAction.Argument2>
+                          <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                        </ActivityAction.Argument2>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.79999999999995,2117.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="ticker" />
+                            <Variable x:TypeArguments="x:String" Name="lastValue" />
+                            <Variable x:TypeArguments="x:String" Name="change" />
+                            <Variable x:TypeArguments="x:String" Name="bid" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ueab:ReadCellValueX DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="443.2,160" sap2010:WorkflowViewState.IdRef="ReadCellValueX_1">
+                            <ueab:ReadCellValueX.Cell>
+                              <InArgument x:TypeArguments="ue:IReadCellRef">
+                                <CSharpValue x:TypeArguments="ue:IReadCellRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">CurrentRow.ByField["A"]</CSharpValue>
+                              </InArgument>
+                            </ueab:ReadCellValueX.Cell>
+                            <ueab:ReadCellValueX.SaveTo>
+                              <OutArgument x:TypeArguments="x:String">
+                                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">ticker</CSharpReference>
+                              </OutArgument>
+                            </ueab:ReadCellValueX.SaveTo>
+                          </ueab:ReadCellValueX>
+                          <If DisplayName="If to skip header row" sap:VirtualizedContainerService.HintSize="443.2,52.8" sap2010:WorkflowViewState.IdRef="If_1">
+                            <If.Condition>
+                              <InArgument x:TypeArguments="x:Boolean">
+                                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">ticker == "symbol"</CSharpValue>
+                              </InArgument>
+                            </If.Condition>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If.Then>
+                              <Sequence sap:VirtualizedContainerService.HintSize="241.6,116.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:Continue sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT edit-symbol'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="443.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="8c3ca6b8-be6b-4969-ad09-e24eebe51ad5" Version="V1">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://quotes.freerealtime.com/quotes/" DesignTimeRectangle="846, 303, 87, 35" ElementType="InputBox" FriendlyName="'INPUT edit-symbol'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='' /&gt;" Guid="c7485558-b3c0-4d2b-98f8-53b22891445d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFsAAAAnCAYAAABg1jQjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANeSURBVGhD7ZoNS9tAGMeL38DP4yctDYbRGqlFLRwlZaOwsBRdZVVnRoaC6MagawfV2aLFl/+ep3dpm75YV7tz2PvBA/bu8qT+cnnuCpeAQRtGtkaMbI3EZAshsLKygqWlJSQSCRMzBvtjj+xzkJ5s7lheXkYmk0G9Xkez2TQxY7A/9sg+B4X3ZPOTWFtbw9XVFa6vr3Fzc4NOp2PiL4O9sb9Wq9X1yV4jerJ56l9eXuL29hYPDw8mnhns8eLious1oiebaw0/GR5oeD7skWc5e42IyeanYZgf7HOi7Lu7O/XJMA/Yp5GtCSNbI0a2RmaSHRaSSCanh1Peg+C/C6G6cjqNskPXOvDrquEVMZPsH59cuMV+iHWLBFlwRLzd+7pvZA8wk+xh5inIyJ7CZEHh6My+byIobSJtqXJjpbFZCtC8l92judoIiza12cgfNFUbffFfAdwsv1Eyj5UVqJy1VS8j7+18CLCTk+OsjIdz1fsS6JV9X4O/LuU4BR/Voyr8Al+bhF08QYeGDOeqdT8nkd2tyQaic+zCTlEeR8DfDxDs+xAO57Uhwki4ujeNs7c8ulcF3t5LqtYsu/M53xWXPxicgbQGvE8juSpw2Irnqu1mu+Odcl80jYaXppzbVfxWb4OkjcNtak97NIJR935Twnls3MuhVfZJkf5OCYSP/PNRrlJZwKZr055U1+OnjzS3F6sIjmhWD0SlwOUm+h5Db9V/gEbZTexwCXF8NGTnWGQuGhfF+k58fCji/WPCPe4OXGTZDfhcV58o2y6GaBzIspPd6y+MkWwx1eFCy36kjNCCx7sS79twroZ8G1J5HEZl/rvXLS/2+6HyMsKCyx6/QLYRCNqaqYcwkotqtEPXWCKgkYxaIGlBDWLrrMpjyYV24WX3t342sqUKLWpVeFu8qNGOY1cWl3G5Tt/JfbZ7zJtD0kqlhGd3MuXA/Si3fm5O5entXBZdNjP8o2Y1C/dLvyaPzdU5gWvTWPstTlUJap9VIAZ/1NiU56iB/jd+pbINT8PI1oiRrREjWyNGtkaMbI0Y2RoxsjUyUTafSePjUob5wT7HnvXj05YbGxvqk2EesM+xp1ij89m5XM6c+Xsm7I89TjyfzXAHPwme+lxrTMwW7I89DopmYrIN/xLgD9hsc1YgGa6WAAAAAElFTkSuQmCC" InformativeScreenshot="5ea5f663468ca731eb7935fce36d7355.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quote for T | FreeRealTime.com' /&gt;" SearchSteps="FuzzySelector, Image" />
+                            </uix:NTypeInto.Target>
+                            <uix:NTypeInto.Text>
+                              <InArgument x:TypeArguments="x:String">
+                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">ticker</CSharpValue>
+                              </InArgument>
+                            </uix:NTypeInto.Text>
+                          </uix:NTypeInto>
+                          <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="443.2,178.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1" />
+                          <uix:NGetText DisplayName="Get Text 'Last'" sap:VirtualizedContainerService.HintSize="443.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="8c3ca6b8-be6b-4969-ad09-e24eebe51ad5" ScrapingMethod="TextAttribute" ScrapingOptions="None" Version="V1">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://quotes.freerealtime.com/quotes/AAPL/Quote" DesignTimeRectangle="69, 617, 130, 33" ElementType="Text" FriendlyName="'164.85'" FullSelectorArgument="&lt;webctrl aaname='164.85' parentid='qmQuoteTable' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='qmQuoteTable' tag='DIV' type='' /&gt;" Guid="0ed18d64-63be-46cd-bb94-94f064b7b076" ImageBase64="" InformativeScreenshot="53cd180b897106034c99b52f4eb7a7ef.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quote for AAPL | FreeRealTime.com' /&gt;" SearchSteps="FuzzySelector">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="69, 580, 130, 38" ElementType="Text" FriendlyName="'Last'" FullSelectorArgument="&lt;webctrl aaname='Last' parentid='qmQuoteTable' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Last' parentid='qmQuoteTable' tag='DIV' type='' check:text='Last' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIYAAAAlCAYAAACH8ZHRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMwSURBVHhe7ZvBa9pQHMf3P3kRCiKFghc9VAp1BxkVSh2UHmRIRgmF9FB3kLHi4V0ymFAQJINmUDpYvAiCh0AhIL303EPvPX73fhoxJs/i2m00ye8Ln0Pee9HD72PeLyG+eXx8xGAwAIcTDIvBUYbF4CjDYnCUYTE4yrAYHGWeFIPm7u/vcXd3h9vbWyYBUC2pplTbp7JSjIeHB+UHM8mBarwqSjFYivSwSo6IGHSs+gAmuai2lYgYtP+oTmaSC9U8nIgY3GimD6p5OBExVCcyySecZIkxEqhlMqiJsXr+XzCy0DoxMVbNxYhwWIwXYp9kkNkTLMarhsV4NuGkVgzvlwn9oIzNDVlYeU4mX0K1KeDcBNbdOBDNKkr52ZpcsQpNXMOd0PwYYs8/1+e/bmF/mXDSKcbgHBUq9Dsd4sKC1Tdx/qGCrBzLHnbhTtf5hS/WYYieXNODOJ6tqXSGct7D8IeF9nu5ZkeH2bdgD73l74kR4aRSjOvP8kpR1GF7wXEP1ses/OXLcTr2P0v/vrym18hi88DE0B/jrSQOvLDHGIuaFENDj4TxLGhym8m+NdAbjOFNt48oLEYc+EMxPHcM59JCT7ShH1X8fqMGMZrND781UJ73IBubKB/Irafv+D3GDBYjDqwrxrCLxjZtG1T0HEo7ZdSbbbSa5SUxpkxcOH0B42jRhGb3BYa+HCxGHFhLDBcmNYwFDd1Qs+h8UYgRZOLB6dB2U0Dr52yMxYgDa4lhQ6crxbG1PD5x0N6lK8JMDO/SQHmrhNZVYI3Eu2iwGLHDF6Owr8E4NaJ0bHkr6qJ7SNtIDtUzU96GUo+ho7aVRS6fW1wxPBtGURY9X4XWma0zOw1UqCHdXzwCv/5UkOdUoH/l29XXiy/G/IFThPkve/rgat5sytvP7TpaF7KpvGqhII+1vl9g18Z5oLegh2D1Mwvj4B2K7Fe0XRJKCnNqL8ZjRjjJEoN5NuGwGMyUcCJi8Is66WOtF3X41b70sdarfXSsOplJLlTzcCJiUPjvA+lh7b8PzMNyJJ9VUlBWikGhOdp/uCFNDlRLqqlq+wjmSTE46Q2LwVGGxeAoAvwG9JsMAhYD8TUAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                            <uix:NGetText.Text>
+                              <OutArgument x:TypeArguments="x:String">
+                                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">lastValue</CSharpReference>
+                              </OutArgument>
+                            </uix:NGetText.Text>
+                          </uix:NGetText>
+                          <uix:NGetText DisplayName="Get Text Change" sap:VirtualizedContainerService.HintSize="443.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="8c3ca6b8-be6b-4969-ad09-e24eebe51ad5" Version="V1">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://quotes.freerealtime.com/quotes/AAPL/Quote" DesignTimeRectangle="199, 211, 130, 33" ElementType="Text" FriendlyName="'2.11'" FullSelectorArgument="&lt;webctrl aaname='2.11' parentid='qmQuoteTable' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='qmQuoteTable' tag='DIV' type='' /&gt;" Guid="0fd894b7-dce5-411b-b1e1-757304e394d6" InformativeScreenshot="60a121353dfcb309916e97d3e3b96cfa.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quote for AAPL | FreeRealTime.com' /&gt;" SearchSteps="FuzzySelector">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target DesignTimeRectangle="199, 174, 130, 38" ElementType="Text" FriendlyName="'Change(%)'" FullSelectorArgument="&lt;webctrl aaname='Change(%)' parentid='qmQuoteTable' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Change(%)' parentid='qmQuoteTable' tag='DIV' type='' check:text='Change(%)' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                            <uix:NGetText.Text>
+                              <OutArgument x:TypeArguments="x:String">
+                                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">change</CSharpReference>
+                              </OutArgument>
+                            </uix:NGetText.Text>
+                          </uix:NGetText>
+                          <uix:NGetText DisplayName="Get Text 'Bid'" sap:VirtualizedContainerService.HintSize="443.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="8c3ca6b8-be6b-4969-ad09-e24eebe51ad5" Version="V1">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://quotes.freerealtime.com/quotes/AAPL/Quote" DesignTimeRectangle="459, 211, 130, 33" ElementType="Text" FriendlyName="'162.11'" FullSelectorArgument="&lt;webctrl aaname='162.11' parentid='qmQuoteTable' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='qmQuoteTable' tag='DIV' type='' /&gt;" Guid="e9c6ed36-cc5d-4b39-9731-0c2b07d5de06" InformativeScreenshot="9e2dddbf541f5797b39d208d476f1b57.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quote for AAPL | FreeRealTime.com' /&gt;" SearchSteps="FuzzySelector">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target DesignTimeRectangle="459, 174, 130, 38" ElementType="Text" FriendlyName="'Bid'" FullSelectorArgument="&lt;webctrl aaname='Bid' parentid='qmQuoteTable' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Bid' parentid='qmQuoteTable' tag='DIV' type='' check:text='Bid' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIYAAAAlCAYAAACH8ZHRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJ+SURBVHhe7Zu/a9tQFIX7P3kxGEwJBLJEQ0Wh7mRiKM1QdfAQDEEUnMUleDGlaPEQQ8EhOJB0caDNosmDJ4Px4tmDd4+n7yoyUaQnVaXTk86Bb7Dfj+V+6D6bp1dgGE0oBqMNxWC0oRiMNhSD0SZTjN1uh81mg/V6jdVqRQqA1FJqKrXNSqoY2+1WuzEpDlLjtGjFoBTlIU2OhBjyiNFtQIqLrq0kxJD+o1tMiovUPJ6EGDxolg+peTwJMXQLSfGJp9hi3LmoVCpJagewP7oY/lpE5s/gnaixEw+z6B4Jwnlf7jVj5hJPKcRofO6iexHh7BTWa5HEQu9hP59iRFMKMdw7zZjvoaXGqhf/WmCKYT5ZYqzu4UpbOZ+En/VPjNltD6fH9WCf+rsORr5PMYwnTYzlHNPvDo5UK+n+3J8zkmLMrxxURYhmD8ObCYaXDuw3LbTeUgyzSTt8Blhwr2eR+TExllP0jlSr+eDBX+7nrLC4dZVQah7FMJgch8/2lR/Oj4nxOICt1nauo79chN8Y8IlhOFlnjKWPgYhQa2M0l+9iYgRrbQweI2sC5hh9ohhmkyWGQs4Qz+N5xVhgfEYxzOZ/xGAreRndImP5SysJRKg4+laiBOgfP31+cfhUe1pqT4phMqEYicPnuYPGYTUYs75Ow/lxMZ4lqDddeD8mGH9rw66JTBTDbEIxktRhNR30bzJ+robMHzx03h8E/2dUDxvoeGP0ZR7FIGUgHopBAuJJiMGLOuUj10UdXu0rH7mu9vEycPnIdRlYwtcHykPu1wf2oRzFJ00KSaoYEnnESP/hgbQ4SC2lprr2EU2mGEx5QzEYbSgGow3FYDQB/gAOwTEgjXxCnAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                            <uix:NGetText.Text>
+                              <OutArgument x:TypeArguments="x:String">
+                                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">bid</CSharpReference>
+                              </OutArgument>
+                            </uix:NGetText.Text>
+                          </uix:NGetText>
+                          <ueab:WriteCellX DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="443.2,160" sap2010:WorkflowViewState.IdRef="WriteCellX_1">
+                            <ueab:WriteCellX.Cell>
+                              <InArgument x:TypeArguments="ue:IReadWriteCellRef">
+                                <CSharpValue x:TypeArguments="ue:IReadWriteCellRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">CurrentRow.ByField["B"]</CSharpValue>
+                              </InArgument>
+                            </ueab:WriteCellX.Cell>
+                            <ueab:WriteCellX.Value>
+                              <InArgument x:TypeArguments="x:Object">
+                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">lastValue</CSharpValue>
+                              </InArgument>
+                            </ueab:WriteCellX.Value>
+                          </ueab:WriteCellX>
+                          <ueab:WriteCellX DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="443.2,160" sap2010:WorkflowViewState.IdRef="WriteCellX_2">
+                            <ueab:WriteCellX.Cell>
+                              <InArgument x:TypeArguments="ue:IReadWriteCellRef">
+                                <CSharpValue x:TypeArguments="ue:IReadWriteCellRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">CurrentRow.ByField["C"]</CSharpValue>
+                              </InArgument>
+                            </ueab:WriteCellX.Cell>
+                            <ueab:WriteCellX.Value>
+                              <InArgument x:TypeArguments="x:Object">
+                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">change</CSharpValue>
+                              </InArgument>
+                            </ueab:WriteCellX.Value>
+                          </ueab:WriteCellX>
+                          <ueab:WriteCellX DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="443.2,160" sap2010:WorkflowViewState.IdRef="WriteCellX_3">
+                            <ueab:WriteCellX.Cell>
+                              <InArgument x:TypeArguments="ue:IReadWriteCellRef">
+                                <CSharpValue x:TypeArguments="ue:IReadWriteCellRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">CurrentRow.ByField["D"]</CSharpValue>
+                              </InArgument>
+                            </ueab:WriteCellX.Cell>
+                            <ueab:WriteCellX.Value>
+                              <InArgument x:TypeArguments="x:Object">
+                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">bid</CSharpValue>
+                              </InArgument>
+                            </ueab:WriteCellX.Value>
+                          </ueab:WriteCellX>
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="443.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_3">
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19" xml:space="preserve">"ticker= " + ticker + "   last value=" + lastValue + "  change:  " + change + " + bid= " +bid</CSharpValue>
+                            </InArgument>
+                          </WriteLine>
+                        </Sequence>
+                      </ActivityAction>
+                    </ueab:ExcelForEachRowX.Body>
+                    <ueab:ExcelForEachRowX.Range>
+                      <InArgument x:TypeArguments="ue:IReadRangeRef">
+                        <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">Excel.Sheet["ticker symbols"]</CSharpValue>
+                      </InArgument>
+                    </ueab:ExcelForEachRowX.Range>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ueab:ExcelForEachRowX>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="30, 0, 1350, 1030" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADFSURBVDhPY1AIaP9PCabIABAg24DIsoX/f//+S74BIKBom0ecASCgHNQB59998PL/weM3iTNgyboT/99/+Ao2RD+iBywGAiDNRBmArBgGHMObsRtgEjsBRfOfP3//h2dPhisG4c9ffqDw4QZMW7AfbPq6rWfBfFWgn0EAWTE2DDcAphgZoCvGhsEGXLv59P+0RXvhgtv3XQY69TuKQlwYbACxtmHDDCDNNsENWCWJwWADsEkQixmU7LBLEIsZsAkSj/P+AwC7ZRohsuQPDQAAAABJRU5ErkJggg==" InformativeScreenshot="b3bf00e38226b1b245be980455a11cc9.png" Selector="&lt;html app='msedge.exe' title='Quote for T | FreeRealTime.com'/&gt;" Url="https://quotes.freerealtime.com/quotes/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
